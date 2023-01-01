@@ -6,6 +6,14 @@ let msg = document.getElementById('msg');
 let tasks = document.getElementById('tasks');
 let add = document.getElementById('add');
 
+let status = document.getElementById('status');
+
+
+
+
+
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     formValidation();
@@ -60,7 +68,19 @@ let createTasks = () => {
             </div> 
         `);
     });
-    
+
+
+// Thinking about putting the status button info here
+function show_hide() {
+    let click = document.getElementById("list-items");
+    if(click.style.display ==="none") {
+       click.style.display ="block";
+    } else {
+       click.style.display ="none";
+    } 
+ } 
+
+
     resetForm();
 };
 
@@ -81,6 +101,7 @@ let editTask = (e) => {
 
     deleteTask(e);
 }
+
 
 let resetForm = () => {
     textInput.value = '';
