@@ -9,8 +9,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-
 }
 
 .header{
@@ -19,7 +17,6 @@ body {
  font-family: 'Pacifico', cursive;
  color:rgb(23,102,171)
 }
-
 
 .app {
     width: 500px;
@@ -37,7 +34,7 @@ body {
 
 #addNew {
     display: flex;
-    background-color: rgb(23,102,171);
+    background-color: rgba(23,102,171, 0.9);
     align-items: center;
     justify-content: space-between;
     padding: 5px 10px;
@@ -57,26 +54,22 @@ body {
     font-size: 1.5rem;
 }
 
-
 #tasks {
-    /* changed display to flex-box to keep margin at right of task card */
     display: flex-box;
     grid-template-columns: 1fr;
     gap: 16px;
 }
 
 #tasks div {
-    background-color: #e2eede;
-    background-color: rgb(23,102,171);
+    /* background-color: #e2eede; */
+    background-color: rgba(23,102,171, 0.7);
     color: #fff;
     padding: 5px;
     border-radius: 6px;
-    /* added missing margin-bottom */
     margin-bottom: 15px;
     display: grid;
     gap: 4px;
     
-    /* font-family: 'Unbounded', cursive;  */
 }
 
 #tasks div.options {
@@ -100,6 +93,11 @@ body {
 #msg {
     color: red;
     padding-top: 10px;
+}
+
+.desc {
+    word-wrap: break-word;
+    max-width: 450px;
 }
 
 

@@ -6,12 +6,7 @@ let msg = document.getElementById('msg');
 let tasks = document.getElementById('tasks');
 let add = document.getElementById('add');
 
-let status = document.getElementById('status');
-
-
-
-
-
+// let status = document.getElementById('status');
 
 
 form.addEventListener('submit', (e) => {
@@ -36,7 +31,6 @@ let formValidation = () => {
     }
 };
 
-
 let data = [{}];
 
 let acceptData = () => {
@@ -58,8 +52,8 @@ let createTasks = () => {
         return (tasks.innerHTML += ` 
             <div id=${y}>
                 <span class="fw-bold text-uppercase">${x.text}</span>
-                <span class="small ">${x.date}</span>
-                    <p>${x.description}</p>
+                <span class="small ">Due: ${x.date}</span>
+                    <p class="desc">${x.description}</p>
     
                 <span class="options">
                     <i onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
@@ -69,6 +63,8 @@ let createTasks = () => {
         `);
     });
 
+    resetForm();
+};
 
 // Thinking about putting the status button info here
 function show_hide() {
@@ -78,11 +74,10 @@ function show_hide() {
     } else {
        click.style.display ="none";
     } 
- } 
+ }
 
 
-    resetForm();
-};
+
 
 let deleteTask = (e) => {
     e.parentElement.parentElement.remove();
