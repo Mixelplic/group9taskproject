@@ -88,7 +88,7 @@
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 data-bs-dismiss="modal"
               >
                 Close
@@ -96,7 +96,7 @@
               <button
                 type="submit"
                 id="add"
-                class="btn btn-primary"
+                class="btn btn-success"
                 data-bs-dismiss="modal"
               >
                 Add
@@ -104,7 +104,7 @@
 
               <div class="dropdown-container">
                 <button onclick="show_hide()" 
-                  class="btn btn-secondary"
+                  class="btn btn-primary"
                   >
                   Status
                 </button>
@@ -112,7 +112,6 @@
                     <!-- dropdown list items will show when we click the drop button --> 
                     <div id="list-items">
                        <a href="#"> To Do </a>
-                       <a href="#"> Pending </a>
                        <a href="#"> Done </a>
                     </div>
               </div>
@@ -128,7 +127,7 @@
         <!--        <div>
                         <span class="fw-bold">Task 1</span>
                         <span class="small text-secondary">12-13-2022</span>
-                            <p>Go to the gym to watch TV</p>
+                            <p class="desc">Go to the gym to watch TV</p>
 
                         <span class="options">
                             <i onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
@@ -138,7 +137,7 @@
                     <div>
                         <span class="fw-bold">Task 2</span>
                         <span class="small text-secondary">12-13-2022</span>
-                            <p>Walk the dogs</p>
+                            <p class="desc">Walk the dogs</p>
 
                         <span class="options">
                             <i onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
