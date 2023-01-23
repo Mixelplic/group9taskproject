@@ -61,9 +61,8 @@ body {
 }
 
 #tasks div {
-    /* background-color: #e2eede; */
-    background-color: rgba(23,102,171, 0.7);
-    color: #fff;
+    background-color: rgba(109,164,210, 0.7);
+    color: black;
     padding: 5px;
     border-radius: 6px;
     margin-bottom: 15px;
@@ -101,16 +100,21 @@ body {
 }
 
 
+
+/* set the size and position of button 
+.btn-primary {
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: red;
+}
+*/
+
 /* set the position of dropdown */
 .dropdown-container {
     position: relative;
     display: inline-block;
 }
-/* set the size and position of button */
-.btn-secondary {
-    padding: 10px 30px;
-    font-size: 15px;
-}
+
 /* provide css to background of list items */ 
 #list-items {
    display: none;
@@ -118,6 +122,7 @@ body {
    background-color: whitesmoke;
    min-width: 185px;
 }
+
 /* provide css to list items */ 
 #list-items a {
     display: block;

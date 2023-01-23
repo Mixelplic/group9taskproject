@@ -38,6 +38,8 @@ let acceptData = () => {
         text: textInput.value,
         date: dateInput.value,
         description: textarea.value,
+        assignTo: assignTo.value
+
     });
 
     localStorage.setItem('data', JSON.stringify(data));
@@ -51,6 +53,7 @@ let createTasks = () => {
     data.map((x, y) => {
         return (tasks.innerHTML += ` 
             <div id=${y}>
+            <span class="small ">Assigned to: ${x.assignTo}</span>
                 <span class="fw-bold text-uppercase">${x.text}</span>
                 <span class="small ">Due: ${x.date}</span>
                     <p class="desc">${x.description}</p>
@@ -66,7 +69,7 @@ let createTasks = () => {
     resetForm();
 };
 
-// Thinking about putting the status button info here
+/* Thinking about putting the status button info here
 function show_hide() {
     let click = document.getElementById("list-items");
     if(click.style.display ==="none") {
@@ -75,9 +78,7 @@ function show_hide() {
        click.style.display ="none";
     } 
  }
-
-
-
+*/
 
 let deleteTask = (e) => {
     e.parentElement.parentElement.remove();
@@ -93,6 +94,7 @@ let editTask = (e) => {
     textInput.value = selectedTask.children[0].innerHTML;
     dateInput.value = selectedTask.children[1].innerHTML;
     textarea.value = selectedTask.children[2].innerHTML;
+    assignTo.value = selectedTask.children[3].innerHTML;
 
     deleteTask(e);
 }
@@ -102,6 +104,7 @@ let resetForm = () => {
     textInput.value = '';
     dateInput.value = '';
     textarea.value = '';
+    assignTo.value = '';
 };
 
 (() => {

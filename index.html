@@ -59,12 +59,21 @@
                 class="form-control"
                 type="input"
                 minlength="1"
-                maxlength="80"
+                maxlength="38"
                 name="textInput"
                 id="textInput"
               />
+              <br />
               <div id="msg"></div>
-
+              <p>Assigned To</p>
+              <input
+                class="form-control"
+                type="input"
+                minlength="1"
+                maxlength="20"
+                name="assignTo"
+                id="assignTo"
+                />
               <br />
               <p>Due Date</p>
               <input
@@ -81,7 +90,7 @@
                 name="textarea"
                 id="textarea"
                 cols="20"
-                rows="3"
+                rows="5"
               ></textarea>
             </div>
 
@@ -101,21 +110,6 @@
               >
                 Add
               </button>
-
-              <div class="dropdown-container">
-                <button onclick="show_hide()" 
-                  class="btn btn-primary"
-                  >
-                  Status
-                </button>
-                 
-                    <!-- dropdown list items will show when we click the drop button --> 
-                    <div id="list-items">
-                       <a href="#"> To Do </a>
-                       <a href="#"> Done </a>
-                    </div>
-              </div>
-
             </div>
           </div>
         </div>
