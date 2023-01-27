@@ -6,7 +6,8 @@ let msg = document.getElementById('msg');
 let tasks = document.getElementById('tasks');
 let add = document.getElementById('add');
 
-let assignTo = document.getElementById('assignTo');
+let assignedto = document.getElementById('assignedto'); 
+let current_status = document.getElementById('status'); 
 
 
 form.addEventListener('submit', (e) => {
@@ -39,13 +40,14 @@ let acceptData = () => {
         text: textInput.value,
         date: dateInput.value,
         description: textarea.value,
-        assignTo: assignTo.value
+        assignedto: assignedto.value,
+        current_status: current_status.value
     });
 
     localStorage.setItem('data', JSON.stringify(data));
 
     console.log(data);
-    createTasks();
+    createTasks(); 
 };
 
 let createTasks = () => {
@@ -54,9 +56,10 @@ let createTasks = () => {
         return (tasks.innerHTML += ` 
             <div id=${y}>
                 <span class="fw-bold text-uppercase">${x.text}</span>
-                <span class="small ">Assigned to: ${x.assignTo}</span>
+                <span class="small "> ${x.assignedto}</span>
                 <span class="small ">${x.date}</span>
                     <p>${x.description}</p>
+                    <p>${x.current_status}</p>
     
                 <span class="options">
                     <i onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
@@ -81,9 +84,10 @@ let editTask = (e) => {
     let selectedTask = e.parentElement.parentElement;
 
     textInput.value = selectedTask.children[0].innerHTML;
-    dateInput.value = selectedTask.children[1].innerHTML;
-    textarea.value = selectedTask.children[2].innerHTML;
-    assignTo.value = selectedTask.children[3].innerHTML;
+    assignedto.value = selectedTask.children[1].innerHTML; 
+    dateInput.value = selectedTask.children[2].innerHTML;
+    textarea.value = selectedTask.children[3].innerHTML;
+    current_status.value = selectedTask.children[4].innerHTML;
 
 
     deleteTask(e);
@@ -93,7 +97,8 @@ let resetForm = () => {
     textInput.value = '';
     dateInput.value = '';
     textarea.value = '';
-    assignTo.value = '';
+    assignedto.value = '';
+    current_status.value = ''; 
 };
 
 (() => {
