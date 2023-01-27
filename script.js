@@ -56,8 +56,10 @@ let createTasks = () => {
         return (tasks.innerHTML += ` 
             <div id=${y}>
                 <span class="fw-bold text-uppercase">${x.text}</span>
-                <span class="small "> ${x.assignedto}</span>
-                <span class="small ">${x.date}</span>
+                <span class="small
+                text-primary">${x.assignedto}</span>
+                <span class="small
+                text-secondary">${x.date}</span>
                     <p>${x.description}</p>
                     <p>${x.current_status}</p>
     

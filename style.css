@@ -9,22 +9,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-
 }
 
 .header{
  font-size: 30px;
  font-weight: bold; 
- font-family: 'Pacifico', cursive;
+ font-family: 'Pacifico';
  color:rgb(23,102,171)
 }
-
 
 .app {
     width: 500px;
     height: 600px;
-    border: 5px solid  rgb(23,102,171);
+    border: 5px solid rgb(23,102,171);
     border-radius: 25px;
     padding: 15px;
     background-color: #fff;
@@ -59,7 +56,7 @@ body {
 
 
 #tasks {
-    display: flex-box;
+    display: flex;
     grid-template-columns: 1fr;
     gap: 16px;
 }
@@ -72,7 +69,6 @@ body {
     margin-bottom: 15px;
     display: grid;
     gap: 4px;
-    
 }
 
 #tasks div.options {
@@ -88,7 +84,7 @@ body {
 .taskhead{
     font-size: 20px;
     font-weight: bold; 
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico';
     color:rgb(23,102,171);
     text-transform: uppercase;
    }
@@ -99,6 +95,7 @@ body {
 }
 
 .desc {
+    flex-wrap: wrap;
     word-wrap: break-word;
     max-width: 450px;
 }
