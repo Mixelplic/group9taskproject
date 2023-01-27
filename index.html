@@ -65,12 +65,12 @@
               />
               <div id="msg"></div>
               <br />
-              <p>Assign To</p>
+              <p>Assigned To</p>
               <input
                 class="form-control"
-                type="date"
-                name="assignTo"
-                id="assignTo"
+                type="input"
+                name="assignedto"
+                id="assignedto"
               />
               <br />
               <p>Due Date</p>
@@ -81,6 +81,12 @@
                 id="dateInput"
               />
               <br />
+              <p>status</p>
+              <select name="status" id="status">
+                <option value="" disabled="disabled" selected="true">select status</option>
+                <option value="TO-DO">To do</option>
+                <option value="DONE">Done</option>
+              </select> <br> <br>
               <p>Task Description</p>
               <textarea
                 class="form-control"
