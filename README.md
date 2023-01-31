@@ -16,7 +16,7 @@ Joy Shaheb is an experienced Frontend Developer based in Dhaka, Bangladesh. He i
 
 While coding this project, I learned how CRUD (Create, Read, Update, Delete) applications work with JavaScript, how to style Modals, CSS Media Quieries, CSS Box Model, and CSS positioning. 
 
-I made the following modifications to the original code:
+The following modifications were made to the original code:
 - adding a TASK STATUS necessary for user to decide how to manage his/her task
 - displaying a user's NAME next to the task for whom it is assigned
 - displaying a DUE DATE for the task
