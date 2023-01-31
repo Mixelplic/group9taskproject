@@ -33,7 +33,7 @@ body {
 }
 
 #addNew {
-    display: flex;
+    display: grid;
     background-color: rgb(23,102,171);
     align-items: center;
     justify-content: space-between;
