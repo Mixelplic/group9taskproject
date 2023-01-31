@@ -14,7 +14,7 @@ Joy Shaheb is an experienced Frontend Developer based in Dhaka, Bangladesh. He i
 ⭐Practical Projects
 ⭐Tech reviews, etc....
 
-While coding this project, I learned how CRUD applications work with JavaScript, how to style Modals, CSS Media Quieries, CSS Box Model, and CSS positioning. 
+While coding this project, I learned how CRUD (Create, Read, Update, Delete) applications work with JavaScript, how to style Modals, CSS Media Quieries, CSS Box Model, and CSS positioning. 
 
 I made the following modifications to the original code:
 - adding a TASK STATUS necessary for user to decide how to manage his/her task
