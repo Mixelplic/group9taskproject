@@ -5,7 +5,6 @@ let textarea = document.getElementById('textarea');
 let msg = document.getElementById('msg');
 let tasks = document.getElementById('tasks');
 let add = document.getElementById('add');
-
 let assignedto = document.getElementById('assignedto'); 
 let current_status = document.getElementById('status'); 
 
@@ -57,10 +56,10 @@ let createTasks = () => {
             <div id=${y}>
                 <span class="fw-bold text-uppercase">${x.text}</span>
                 <span class="small
-                text-primary">${x.assignedto}</span>
+                text-primary">Assigned to: ${x.assignedto}</span>
                 <span class="small
                 text-secondary">${x.date}</span>
-                    <p>${x.description}</p>
+                    <p class="desc">${x.description}</p>
                     <p>${x.current_status}</p>
     
                 <span class="options">
